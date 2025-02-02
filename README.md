@@ -30,6 +30,15 @@ This is an intelligent document chatbot built using Streamlit and LlamaIndex. Th
 - OpenAI API Key
 - Anthropic API Key
 - Google API Key
+- The keys should be added in a file config.json with the below format:
+{
+    "my_api": {
+        "deepseek": "value",
+        "openai": "value",
+        "anthropic":"value",
+        "google":"value"
+    }
+}
 
 ## Installation
 
@@ -37,3 +46,5 @@ This is an intelligent document chatbot built using Streamlit and LlamaIndex. Th
 ```bash
 git clone https://github.com/chryd/Compare-LLMs.git
 cd document-chatbot
+pip3 install -r requirements.txt
+streamlit run app.py 
